@@ -25,11 +25,12 @@ public class Welcome extends HttpServlet {
             PrintWriter out=response.getWriter();
             Cookie ck[]=request.getCookies();  
             if(ck!=null){  
-                String name=ck[0].getValue();  
-            if(!name.equals("")||name!=null){  
-                count++;
+                 count++;
+                String username=ck[0].getValue();  
+            if(!username.equals("")||username!=null){  
+               
                 out.print("<b>Welcome to Profile</b>");  
-                out.print("<br>Welcome, "+name);  
+                out.print("<br>Welcome, "+username);  
                 out.print("<br>Attempt</b>"+count);
             }  
             }

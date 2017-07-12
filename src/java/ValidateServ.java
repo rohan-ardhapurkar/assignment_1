@@ -33,7 +33,7 @@ public class ValidateServ extends HttpServlet {
        DBConn dbconn=new DBConn();
        
        if(dbconn.isValid(username, password)){
-           Cookie ck=new Cookie("name",username);  
+           Cookie ck=new Cookie("username",username);  
             response.addCookie(ck);
            RequestDispatcher rd=request.getRequestDispatcher("Welcome");
            rd.forward(request,response);
