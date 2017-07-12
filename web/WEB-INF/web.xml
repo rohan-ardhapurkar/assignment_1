@@ -4,9 +4,17 @@
         <servlet-name>ValidateServ</servlet-name>
         <servlet-class>ValidateServ</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>Welcome</servlet-name>
+        <servlet-class>Welcome</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>ValidateServ</servlet-name>
         <url-pattern>/ValidateServ</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Welcome</servlet-name>
+        <url-pattern>/Welcome</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>
